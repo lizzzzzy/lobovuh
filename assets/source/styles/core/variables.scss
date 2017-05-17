@@ -11,8 +11,10 @@ $latex-mobile: "(max-width: 780px)";
 @media #{$latex-mobile} {
   .select {
     position: absolute;
-    top: 150px;
-    left: 20px;
+
+    top: 224px;
+    left: 40px;
+
   }
   header .logo {
     margin-right: 0;
@@ -21,7 +23,18 @@ $latex-mobile: "(max-width: 780px)";
     font-size: 25px;
     margin-right: auto;
   }
-  p {
-    font-size: 12px;
+  .top-block h2{
+    font-size: 35px;
+    margin-bottom: 83px;
+  }
+  .container{
+    padding: 0 40px;
+  }
+  .top-block{
+    padding-top: 46px;
+  }
+  p{
+    font-size: 23px;
+    line-height: 1.3;
   }
 }
