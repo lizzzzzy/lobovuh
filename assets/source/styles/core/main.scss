@@ -1,5 +1,6 @@
     main {
       padding-top: 80px;
+      overflow: hidden;
     }
     .top-block {
       padding-top: 71px;
@@ -143,7 +144,7 @@
         margin-bottom: 42px;
         padding-left: 64px;
       }
-      &__item {
+      &__item,  .slider__item {
         text-align: center;
         width: 255px;
         height: 100%;
