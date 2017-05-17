@@ -1,6 +1,7 @@
 header {
   width: 100%;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: #fff;
@@ -19,6 +20,18 @@ header {
     }
     width: 151px;
     margin-right: 38px;
+  }
+  .select {
+    &:after {
+      content: '';
+      display: inline-block;
+      background-image: url(../img/arrow.png);
+      width: 9px;
+      height: 6px;
+      margin-left: 3px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
   }
   select {
     appearance: none;
@@ -63,6 +76,8 @@ header {
     letter-spacing: 1px;
   }
   .button {
-    //    margin-left: auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
   }
 }

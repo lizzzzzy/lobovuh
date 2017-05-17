@@ -1,16 +1,26 @@
 /* Переменные */
-$helvetica: "Helvetica Neue", Arial, sans-serif;
 
+$helvetica: "Helvetica Neue",
+Arial,
+sans-serif;
 $link: #0000ff;
 $link-hover: #ff0000;
 $blue: #0072c0;
-
 //$blue: #1c75bc;
-
-$latex-tablet: "(max-width: 1000px)";
-$latex-mobile: "(max-width: 640px)";
-
+$latex-mobile: "(max-width: 780px)";
 @media #{$latex-mobile} {
+  .select {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  }
+  header .logo {
+    margin-right: 0;
+  }
+  header .phone {
+    font-size: 25px;
+    margin-right: auto;
+  }
   p {
     font-size: 12px;
   }
