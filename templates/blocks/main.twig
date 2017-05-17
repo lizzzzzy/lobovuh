@@ -49,9 +49,9 @@
         <div class="step__heading">Оставте заявку оператору</div>
         <div class="step__desc">Вам перезвонят в течение 10 минут.</div>
         <div class="step__content">
-          <form action="" class="step__form">
-            <input type="text" placeholder="Ваше имя">
-            <input type="phone" placeholder="+ 7 (000) 000-00-00">
+          <form action="send.php" class="step__form" method="post">
+            <input type="text" placeholder="Ваше имя" name="fio">
+            <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
             <button class="button">Оставить заявку</button>
             <p>При звонке наши специалисты ответят на любой интересующий Вас вопрос.</p>
           </form>
@@ -126,10 +126,11 @@
     <div class="container">
       <h4>Узнайте более точную стоимость ремонта</h4>
       <p>Просто пришлите нам фотографию дефекта</p>
-      <form action="" class="step__form">
-        <input type="text" placeholder="Ваше имя">
-        <input type="phone" placeholder="+ 7 (000) 000-00-00">
+      <form action="send.php" class="step__form" method="post" enctype='multipart/form-data'>
+        <input type="text" placeholder="Ваше имя" name="fio">
+        <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
         <button class="button button--transparent"><span>Загрузите фото</span></button>
+      
         <button class="button button--green">Узнать стоиомость</button>
       </form>
     </div>
