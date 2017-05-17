@@ -96,7 +96,7 @@
         </ol>
         <p class="time">Примерное время работы: 20-40 минут.</p>
       </div>
-    </div> 
+    </div>
   </div>
 
   <div class="blue">
@@ -129,8 +129,10 @@
       <form action="send.php" class="step__form" method="post" enctype='multipart/form-data'>
         <input type="text" placeholder="Ваше имя" name="fio">
         <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
-        <button class="button button--transparent"><span>Загрузите фото</span></button>
-      
+        <button class="button button--transparent" type="button">
+          <input type="file" name="photo" id="file">
+          <label for="file">Загрузите фото</label>
+        </button>
         <button class="button button--green">Узнать стоиомость</button>
       </form>
     </div>

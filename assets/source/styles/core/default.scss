@@ -85,9 +85,16 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.35);
     padding: 9px 51px 9px 17px;
     margin-right: 18px;
-    span {
+    position: relative;
+    input[type="file"] {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    label {
       border-bottom: 1px dashed #fff;
-      
       &:after {
         content: '';
         display: inline-block;
