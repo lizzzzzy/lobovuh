@@ -4,7 +4,7 @@
 <head>
   <title>Лобовух</title>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">   <link href="assets/css/style.css?v=828e5a5bd9bf06213fd6dcf0869e88b2" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport">   <link href="assets/css/style.css?v=e00204054a9e990d99846b4a4da68b62" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
   <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=7b5995e2e9dbcb387424a875e81ea939" charset="UTF-8" async></script>
 </head>
@@ -20,7 +20,8 @@
     </div>
     <div class="select">
       <select name="" id="">
-        <option value="">Санкт-Петербург</option>
+        <!--        <option value="">Санкт-Петербург</option>-->
+        %cities%
       </select>
     </div>
     <div class="phone">+7 (999) 535-99-97</div>
@@ -72,7 +73,7 @@
             <p class="price"><span>Ремонт: </span>49 ₽ / см </p>
           </div>
           <button id="prev"></button>
-          <button id="next"></button> 
+          <button id="next"></button>
         </div>
       </div>
       <div class="step">
@@ -81,6 +82,7 @@
         <div class="step__desc">Вам перезвонят в течение 10 минут.</div>
         <div class="step__content">
           <form action="send.php" class="step__form" method="post">
+            <input type="hidden" name="city" value="%city%">
             <input type="text" placeholder="Ваше имя" name="fio">
             <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
             <button class="button">Оставить заявку</button>
@@ -158,6 +160,7 @@
       <h4>Узнайте более точную стоимость ремонта</h4>
       <p>Просто пришлите нам фотографию дефекта</p>
       <form action="send.php" class="step__form" method="post" enctype='multipart/form-data'>
+        <input type="hidden" name="city" value="%city%">
         <input type="text" placeholder="Ваше имя" name="fio">
         <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
         <button class="button button--transparent" type="button">
@@ -226,7 +229,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="assets/js/scripts.js?v=628766ca599e3718df4114d62d17182a"></script>
+    <script src="assets/js/scripts.js?v=6469b10fb3c9865ce9bc1aff0bf5ec7b"></script>
 </body>
 
 </html>
