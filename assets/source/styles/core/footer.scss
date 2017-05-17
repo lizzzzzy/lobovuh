@@ -1,0 +1,39 @@
+footer {
+  background-color: $blue;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Bebas Neue Book";
+  padding-bottom: 47px;
+  .container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 216px;
+    margin-right: 42px; 
+  }
+  .phone {
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 26px;
+      background-color: #fff;
+      position: absolute;
+        right: -36px;
+    top: 7px;
+    }
+  }
+  .phone,
+  .mail {
+    position: relative;
+    font-size: 31px;
+    color: #fff;
+    line-height: 1;
+    padding-top: 7px;
+        margin-right: 75px;
+    letter-spacing: 2px;
+  }
+}
+

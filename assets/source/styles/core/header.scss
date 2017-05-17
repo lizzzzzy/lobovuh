@@ -1,0 +1,68 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 5px 12px rgba(32, 22, 0, .2);
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+  }
+  .logo {
+    h1 {
+      font-size: 0;
+      text-indent: -999px;
+      position: absolute;
+    }
+    width: 151px;
+    margin-right: 38px;
+  }
+  select {
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: #231f20;
+    font-family: "PF Agora Sans Pro";
+    font-size: 21px;
+    font-weight: 300;
+    border-bottom: 1px dashed #0072c0;
+    position: relative;
+    &:before,
+    &:afer {
+      content: '';
+      display: block;
+      background-color: #0072c0;
+      position: absolute;
+      height: 10px;
+      width: 2px;
+    }
+    &:before {
+      top: 0;
+      right: 5px;
+      transform: rotate(25deg);
+    }
+    &:afer {
+      top: 0;
+      right: 0;
+      transform: rotate(-25deg);
+    }
+  }
+  option {}
+  .phone {
+    margin-top: 7px;
+    margin-left: auto;
+    color: #231f20;
+    font-family: "Bebas Neue Book";
+    font-size: calc(67px / 2);
+    font-weight: 400;
+    margin-right: 21px;
+    letter-spacing: 1px;
+  }
+  .button {
+    //    margin-left: auto;
+  }
+}

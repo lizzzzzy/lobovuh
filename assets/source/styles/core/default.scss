@@ -1,0 +1,115 @@
+/* Дефолтные стили */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-size-adjust: none;
+}
+
+/* Формы */
+
+input,
+textarea,
+button {
+  font-family: $helvetica;
+}
+
+/* Аккуратные таблицы */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Основные стили */
+
+html {
+  background: rgba(255, 255, 255, 1);
+}
+body {
+  font-family: $helvetica;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Ссылки без дефолтного подчёркивания */
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+h3 {
+  color: #231f20;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: calc(67px / 2);
+  line-height: 1.2;
+}
+h4 {
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: calc(98px / 2);
+  line-height: 1.2;
+  letter-spacing: 3.5px;
+  margin-bottom: 12px;
+}
+p {
+  color: #231f20;
+  font-family: "PF Agora Sans Pro";
+  font-size: calc(42px / 2);
+  line-height: 1.2;
+  font-weight: 300;
+}
+.button {
+  background-color: #0072c0;
+  color: #fff;
+  border-radius: 8px;
+  min-width: calc(357px / 2);
+  height: calc(92px / 2);
+  font-family: "PF Agora Sans Pro";
+  font-size: 21px;
+  font-weight: 300;
+  border: none;
+  box-shadow: none;
+  appearance: none;
+  box-shadow: 0 5px 12px rgba(32, 22, 0, .35);
+  &--transparent {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 9px 51px 9px 17px;
+    margin-right: 18px;
+    span {
+      border-bottom: 1px dashed #fff;
+      
+      &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(../img/plus.png);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 10px;
+        position: absolute;
+      }
+    }
+  }
+  &--green {
+    padding: 0 14px;
+    background-color: #4ed100;
+  }
+}
+.container {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 1280px;
+  padding: 0 20px;
+}
