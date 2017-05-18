@@ -158,6 +158,10 @@
           }
         }
       }
+       #prev,
+      #next {
+        display: none;
+      }
       .heading {
         color: #231f20;
         font-family: "Bebas Neue";

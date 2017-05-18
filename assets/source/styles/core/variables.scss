@@ -101,6 +101,7 @@ $small-mobile: "(max-width: 590px)";
   }
   #prev,
   #next {
+    display: block;
     height: 44px;
     width: 22px;
     appearance: none;
