@@ -6,18 +6,25 @@ $tel = @$_POST['tel'];
 $tel = trim($tel);
 $fio = @$_POST['fio'];
 $fio = trim($fio);
+$city = @$_POST['city'];
+$city = trim($city);
 
 $body = file_get_contents('views/letter.tpl');
 
 if (!empty($fio)) {
-  $body = str_replace("%fio%", ', '.$fio, $body);
+  $body = str_replace("%fio%", $fio, $body);
 } else {
-  $body = str_replace("%fio%", '', $body);
+  $body = str_replace("%fio%", '-', $body);
 }
 if (!empty($tel)) {
-  $body = str_replace("%tel%", ', '.$tel, $body);
+  $body = str_replace("%tel%", $tel, $body);
 } else {
-  $body = str_replace("%tel%", '', $body);
+  $body = str_replace("%tel%", '-', $body);
+}
+if (!empty($city)) {
+  $body = str_replace("%city%", $city, $body);
+} else {
+  $body = str_replace("%city%", '-', $body);
 }
 
 date_default_timezone_set('Etc/UTC');
