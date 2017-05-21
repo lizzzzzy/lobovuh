@@ -222,11 +222,11 @@ $small-mobile: "(max-width: 590px)";
   .container {
     padding: 0 20px;
   }
-  header{
+  header {
     position: static;
     padding-top: 15px;
   }
-  main{
+  main {
     padding-top: 0;
   }
   footer {
@@ -264,6 +264,8 @@ $small-mobile: "(max-width: 590px)";
   .step__form input {
     font-size: 16px;
     height: 40px;
+    padding-top: 5px;
+    line-height: 30px;
   }
   .step__form input[type="text"] {
     margin-right: 0;
@@ -313,17 +315,16 @@ $small-mobile: "(max-width: 590px)";
   .text-block ol li {
     font-size: 18px;
     line-height: 36px;
-    
     padding-left: 45px;
   }
-  .text-block ol li:before{
+  .text-block ol li:before {
     margin-left: -45px;
   }
   .text-block .time {
     font-size: 24px;
     padding-right: 0;
     line-height: 30px;
-        background-position: 0px top;
+    background-position: 0px top;
     background-size: 13%;
   }
   .text-block p {
@@ -341,19 +342,19 @@ $small-mobile: "(max-width: 590px)";
   .step__content {
     padding-left: 44px;
   }
-  .top-block .promo img{
-        position: absolute;
+  .top-block .promo img {
+    position: absolute;
     z-index: 0;
     height: 100%;
     width: auto;
     right: 0;
     top: 0;
   }
-  .top-block .promo p{
+  .top-block .promo p {
     position: relative;
-        padding-right: 49px;
+    padding-right: 49px;
   }
-  .top-block .promo:before{
+  .top-block .promo:before {
     z-index: 1;
     right: -20px;
   }

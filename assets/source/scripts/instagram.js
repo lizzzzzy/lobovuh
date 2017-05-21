@@ -10,7 +10,8 @@ $(function(){
     success: function(result){
       var data = result.data;
       data.forEach(function(e,i){
-        $('.insta').append('<a href="'+e.link+'"><img src="'+e.images.thumbnail.url+'" /></a>');
+        if (i < 4)
+          $('.insta').append('<a href="'+e.link+'"><img src="'+e.images.thumbnail.url+'" /></a>');
       });
     }
   });

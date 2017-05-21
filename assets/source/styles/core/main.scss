@@ -275,7 +275,16 @@ main {
     margin-top: 14px;
     max-width: 615px;
   }
-  .insta {}
+  .insta {
+    
+    img{
+      display: inline-block;
+      max-width: 100px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    
+  }
   ol {
     counter-reset: list;
     list-style: none;
