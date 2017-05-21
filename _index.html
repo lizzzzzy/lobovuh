@@ -4,7 +4,7 @@
 <head>
   <title>Лобовух</title>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">   <link href="assets/css/style.css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport">   <link href="assets/css/style.css?v=2ffa77d26803fccc392bb7912de1c35e" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
   <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=7b5995e2e9dbcb387424a875e81ea939" charset="UTF-8" async></script>
 </head>
@@ -33,10 +33,10 @@
   <div class="top-block">
     <div class="container">
       <div class="left">
-        <h2>удаление сколов на лобовом стекле автомобиля</h2>
+        <h2 id="top-heading">удаление сколов на лобовом стекле автомобиля</h2>
         <p>Наша компания помогает клиентам не переплачивать за полную замену ветрового стекла. Мы объединяем специалистов со всего города, благодаря этому мы можем выполнить ремонт в удобное время в удобном месте.</p>
       </div>
-      <div class="right promo">
+      <div class="right promo" id="sale">
         <img src="assets/img/promo.png" alt="">
         <p><span>СКИДКА 30%</span> на полное восстановление совмещенного дефекта скола с трещиной</p>
       </div>
@@ -79,12 +79,12 @@
       <div class="step">
         <div class="number">2</div>
         <div class="step__heading">Оставте заявку оператору</div>
-        <div class="step__desc">Вам перезвонят в течение 10 минут.</div>
+        <div class="step__desc">Вам перезвонят в течение 24 секунд.</div>
         <div class="step__content">
           <form action="send.php" class="step__form" method="post">
             <input type="hidden" name="city" value="%city%">
             <input type="text" placeholder="Ваше имя" name="fio">
-            <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
+            <input type="phone" class="phone-input" placeholder="+ 7 (000) 000-00-00" name="tel2">
             <button class="button">Оставить заявку</button>
             <p>При звонке наши специалисты ответят на любой интересующий Вас вопрос.</p>
           </form>
@@ -104,7 +104,7 @@
         <h3>Что делать до прибытия мастера?</h3>
         <p class="what">Небольшой скол или маленькая трещина могут превратиться в огромную проблему — эти повреждения быстро расползаются, поэтому ремонт необходимо осуществить как можно раньше. Как только вы заметили повреждение на стекле — заклейте его скотчем, не включайте обдув или подогрев стекла, будьте аккуратнее на кочках.</p>
       </div>
-      <div>
+      <div id="our-works">
         <h3>Наши некоторые работы в инстаграм:</h3>
         <div class="insta"></div>
       </div>
@@ -140,7 +140,7 @@
         <br>Управление транспортным средством с таким дефектом грозит штрафом в размере пятисот рублей по 1 части статьй 12.5 КоАП РФ пункта 7.3
         <br>Так же с дефектом (скол/трещина) на ветровом стекле ТС, возможны проблемы с пересечением пограничной таможни</p>
     </div>
-  </div>
+  </div> 
 
   <div class="text-block team">
     <div class="container">
@@ -155,14 +155,14 @@
     </div>
   </div>
 
-  <div class="blue blue-form">
+  <div class="blue blue-form" id="form">
     <div class="container">
       <h4>Узнайте более точную стоимость ремонта</h4>
       <p>Просто пришлите нам фотографию дефекта</p>
       <form action="send.php" class="step__form" method="post" enctype='multipart/form-data'>
         <input type="hidden" name="city" value="%city%">
         <input type="text" placeholder="Ваше имя" name="fio">
-        <input type="phone" placeholder="+ 7 (000) 000-00-00" name="tel">
+        <input type="phone" class="phone-input" placeholder="+ 7 (000) 000-00-00" name="tel2">
         <button class="button button--transparent" type="button">
           <input type="file" name="photo" id="file">
           <label for="file">Загрузите фото</label>
@@ -229,7 +229,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js?v=5709b0bfd40b3553390d7b76b747f496"></script>
 </body>
 
 </html>

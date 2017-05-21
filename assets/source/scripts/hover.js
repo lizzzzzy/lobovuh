@@ -8,8 +8,8 @@ $(function () {
       .filter('[href="' + $(this).attr('href') + '"]')
       .toggleClass("hover", e.type == 'mouseover');
   });
-  
-  $('.select select').on('change',function(){
+
+  $('.select select').on('change', function () {
     $('input[name="city"]').val($(this).find('option:selected').val());
   });
 
@@ -45,3 +45,8 @@ previous.onclick = function () {
   previousSlide();
 };
 
+
+$('.button--transparent input').on('change', function () {
+  $(this).parent().addClass('button--green');
+  $(this).parent().find('label').text('Другое фото');
+});

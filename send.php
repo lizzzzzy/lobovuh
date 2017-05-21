@@ -1,8 +1,8 @@
 <?php
 
-$email = 'ipacmanx@gmail.com';
+$email = 'lobovuh@gmail.com';
 
-$tel = @$_POST['tel'];
+$tel = @$_POST['tel2'];
 $tel = trim($tel);
 $fio = @$_POST['fio'];
 $fio = trim($fio);
@@ -12,6 +12,7 @@ $city = trim($city);
 $body = file_get_contents('views/letter.tpl');
 
 if (!empty($fio)) {
+  $fio = strtoupper(substr($fio,0,1)).substr($fio,1);
   $body = str_replace("%fio%", $fio, $body);
 } else {
   $body = str_replace("%fio%", '-', $body);
@@ -56,8 +57,7 @@ $mail->Subject = 'Новая заявка';
 $mail->Body    = $body;
 $mail->IsHTML(true);
 
-if (!$mail->send()) {
-   echo json_encode(array("result"=>"error", "message"=>$mail->ErrorInfo));
-} else {
-   echo json_encode(array("result"=>"ok"));
+if ($mail->send()) {
+  $result = file_get_contents('send.html');
+  echo $result;
 }

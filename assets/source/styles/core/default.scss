@@ -39,6 +39,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 img {
   display: block;
@@ -68,6 +69,7 @@ p {
   font-weight: 300;
 }
 .button {
+  cursor: pointer;
   background-color: #0072c0;
   color: #fff;
   border-radius: 8px;
@@ -90,9 +92,9 @@ p {
     input[type="file"] {
       width: 100%;
       position: absolute;
-      top: 0;
+      top: 50px;
       left: 0;
-      z-index: -1;
+      box-shadow: none;
     }
     label {
       border-bottom: 1px dashed #fff;
