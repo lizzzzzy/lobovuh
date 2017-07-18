@@ -4,7 +4,7 @@
     <div class="container">
       <div class="left">
         <h2 id="top-heading">удаление сколов на лобовом стекле автомобиля</h2>
-        <p>Наша компания помогает клиентам не переплачивать за полную замену ветрового стекла. Мы объединяем специалистов со всего города, благодаря этому мы можем выполнить ремонт в удобное время в удобном месте.</p>
+        <p>Мы объединяем специалистов и помогаем избежать замены стекла. Бесплатный выезд мастера и качественные материалы, гарантия восстановления!</p> 
       </div>
       <div class="right promo" id="sale">
         <img src="assets/img/promo.png" alt="">
@@ -19,28 +19,27 @@
       <div class="step">
         <div class="number">1</div>
         <div class="step__heading">Оцените дефект</div>
-        <div class="step__desc">Стоимость указана с учетом выезда мастера!</div>
+        <div class="step__desc blue-text">Стоимость указана с учетом выезда мастера!</div> 
         <div class="step__content slider-container">
           <div class="step__item slider__item showing">
             <img src="assets/img/photo-star.jpg" alt="">
             <p class="heading">«Звезда»</p>
-            <p class="price">990 ₽</p>
+            <p class="price"><span>от</span> 990 ₽</p>
           </div>
           <div class="step__item slider__item">
             <img src="assets/img/photo-eye.jpg" alt="">
             <p class="heading">«БЫЧИй глаз»</p>
-            <p class="price">1090 ₽</p>
-          </div>
+            <p class="price"><span>от</span> 1090 ₽</p>
+          </div> 
           <div class="step__item slider__item">
             <img src="assets/img/photo-combo.jpg" alt="">
             <p class="heading">«Комбо»</p>
-            <p class="price">1190 ₽</p>
+            <p class="price"><span>от</span> 1190 ₽</p>
           </div>
           <div class="step__item slider__item">
             <img src="assets/img/photo-tr.jpg" alt="">
             <p class="heading">«Трещина»</p>
-            <p class="price"><span>остановить:</span> 490 ₽</p>
-            <p class="price"><span>Ремонт: </span>49 ₽ / см </p>
+            <p class="price"><span>от</span> 1490 ₽</p>
           </div>
           <button id="prev"></button>
           <button id="next"></button>
@@ -51,7 +50,7 @@
         <div class="step__heading">Оставте заявку оператору</div>
         <div class="step__desc">Вам перезвонят в течение 24 секунд.</div>
         <div class="step__content">
-          <form action="send.php" class="step__form" method="post">
+          <form action="send.php" class="step__form" method="post" id="simple-form">
             <input type="hidden" name="city" value="%city%">
             <input type="text" placeholder="Ваше имя" name="fio">
             <input type="phone" class="phone-input" placeholder="+ 7 (000) 000-00-00" name="tel2">
@@ -71,7 +70,7 @@
   <div class="text-block gray">
     <div class="container">
       <div class="side">
-        <h3>Что делать до прибытия мастера?</h3>
+        <h3>Что делать до <span class="blue-text">бесплатного прибытия</span> мастера?</h3>
         <p class="what">Небольшой скол или маленькая трещина могут превратиться в огромную проблему — эти повреждения быстро расползаются, поэтому ремонт необходимо осуществить как можно раньше. Как только вы заметили повреждение на стекле — заклейте его скотчем, не включайте обдув или подогрев стекла, будьте аккуратнее на кочках.</p>
       </div>
       <div id="our-works">
@@ -86,12 +85,20 @@
       <div class="side">
         <h3>Как проходит ремонт?</h3>
         <div class="video">
-          <img src="assets/img/video.jpg" alt="">
-        </div>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8AGfD2iLhlU" frameborder="0" allowfullscreen></iframe>
+        </div> 
+        <style>
+          @media (max-width: 590px){
+            iframe{
+              height: 150px;
+            }
+          }
+        </style>
       </div>
       <div>
         <h3>Этапы работы:</h3>
         <ol>
+          <li>Бесплатный выезд мастера;</li>
           <li>Подготовка дефекта, снятие напряжения, чистка, сушка;</li>
           <li>Заполнение пустоты повреждения полимером;</li>
           <li>Кристаллизация полимера ультрафиолетом;</li>
@@ -110,7 +117,7 @@
         <br>Управление транспортным средством с таким дефектом грозит штрафом в размере пятисот рублей по 1 части статьй 12.5 КоАП РФ пункта 7.3
         <br>Так же с дефектом (скол/трещина) на ветровом стекле ТС, возможны проблемы с пересечением пограничной таможни</p>
     </div>
-  </div> 
+  </div>
 
   <div class="text-block team">
     <div class="container">
@@ -141,5 +148,14 @@
       </form>
     </div>
   </div>
-
 </main>
+
+<div class="modal">
+  <img src="assets/img/done.png" alt="">
+  <div class="text">
+    Спасибо! 
+    <span>Ваша заявка принята</span>
+  </div>
+  <button class="close" type="button"></button>
+</div>
+<div class="overlay"></div>

@@ -178,10 +178,9 @@ main {
     font-size: 36px;
     line-height: 1;
     font-weight: bold;
+    text-transform: none;
     span {
-      line-height: 1.6;
-      font-size: 26px;
-      color: #000;
+      font-size: 20px;
     }
   }
   &__form {
@@ -276,24 +275,22 @@ main {
     max-width: 615px;
   }
   .insta {
-    
-    img{
+    img {
       display: inline-block;
       max-width: 100px;
       margin-right: 20px;
       margin-bottom: 10px;
     }
-    
   }
   ol {
-    counter-reset: list;
+    counter-reset: list -1;
     list-style: none;
     margin-bottom: 67px;
     position: relative;
     &:before {
       content: '';
       display: inline-block;
-      height: 75%;
+      height: 75%; 
       width: 1px;
       border-left: 1px dashed #bdbfc1;
       position: absolute;
@@ -420,4 +417,66 @@ main {
   min-height: 40px;
   padding-bottom: 0;
   padding-top: 40px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 310px;
+  text-align: center;
+  background-color: #fff;
+  img {
+    margin: 50px auto 55px;
+    width: 185px;
+  }
+  div {
+    color: #231f20;
+    font-size: 33px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Bebas Neue Bold";
+    span {
+      display: block;
+      font-family: "Bebas Neue Book";
+    }
+  }
+  &.active {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/close.png);
+    background-size: cover;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 999;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  &.active {
+    display: block;
+  }
+}
+.blue-text {
+  color: #1c75bc;
 }

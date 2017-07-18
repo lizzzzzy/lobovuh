@@ -1,6 +1,7 @@
 <?php
 
-$email = 'lobovuh@gmail.com';
+//$email = 'lobovuh@gmail.com';
+$email = 'ipacmanx@gmail.com';
 
 $tel = @$_POST['tel2'];
 $tel = trim($tel);
@@ -61,3 +62,4 @@ if ($mail->send()) {
   $result = file_get_contents('send.html');
   echo $result;
 }
+

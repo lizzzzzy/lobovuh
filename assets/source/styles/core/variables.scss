@@ -358,4 +358,12 @@ $small-mobile: "(max-width: 590px)";
     z-index: 1;
     right: -20px;
   }
+  .modal {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    img{
+      margin-top: 50%;
+      margin-bottom: 30%;
+    }
+  }
 }
